@@ -1,0 +1,48 @@
+{
+	"React Component": {
+		"prefix": "statefulcomponent",
+		"body": [
+			"import React from 'react';",
+			"",
+			"import './${TM_FILENAME_BASE}.scss';",
+			"",
+			"interface Props {",
+			"}",
+			"",
+			"interface State {",
+			"}",
+			"",
+			"export default class ${TM_FILENAME_BASE} extends React.Component<Props, State> {",
+			"    render() {",
+			"        return (",
+			"            <div className=\"${TM_FILENAME_BASE}\">",
+			"                Content",
+			"            </div>",
+			"         );",
+			"    }",
+			"}"
+		],
+		"description": "React Component"
+	},
+	"React Functional Component": {
+		"prefix": "component",
+		"body": [
+			"import React, { ReactNode } from 'react';",
+			"",
+			"import './${TM_FILENAME_BASE}.scss';",
+			"",
+			"interface Props {",
+			"    children: ReactNode;",
+			"}",
+			"",
+			"const ${TM_FILENAME_BASE} = ({ children }: Props) => (",
+			"    <div className=\"${TM_FILENAME_BASE}\">",
+			"        {children}",
+			"    </div>",
+			");",
+			"",
+			"export default ${TM_FILENAME_BASE};"
+		],
+		"description": "Functional React Component"
+	}
+}

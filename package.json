@@ -1,0 +1,21 @@
+{
+	"name": "react-typescript-snippets",
+	"displayName": "React Typescript Snippets",
+	"description": "Snippets that help developing React apps in typescript",
+	"version": "0.0.1",
+	"publisher": "istvan-antal",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescriptreact",
+				"path": "./snippets.json"
+			}
+		]
+	}
+}
