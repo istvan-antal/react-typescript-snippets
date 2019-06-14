@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"publisher": "istvan-antal",
 	"engines": {
-		"vscode": "^1.28.0"
+		"vscode": "^1.8.0"
 	},
 	"categories": [
 		"Snippets"
@@ -17,5 +17,18 @@
 				"path": "./snippets.json"
 			}
 		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/istvan-antal/react-typescript-snippets"
+	},
+	"scripts": {
+		"publish": "vsce publish --packagePath build/react-typescript-snippets.vsix",
+		"build": "vsce package -o build/react-typescript-snippets.vsix",
+		"prebuild": "mkdirp build"
+	},
+	"devDependencies": {
+		"mkdirp": "^0.5.1",
+		"vsce": "^1.63.0"
 	}
 }
